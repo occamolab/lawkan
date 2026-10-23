@@ -1,0 +1,45 @@
+{
+  "G3:fr3t:joint": {
+    "psi_norm_mean": 0.02776714374794307,
+    "psi_norm_max": 0.03355292675272363,
+    "edge_params": 54,
+    "edge_rank": 54,
+    "absorbable_share": 0.982165542489185,
+    "orthogonal_share": 0.017834457510815027,
+    "n_configs": 80,
+    "pos_test_on": 1.368275414345431,
+    "pos_test_off": 17.484600621558513
+  },
+  "G3:fr3t:isolated": {
+    "psi_norm_mean": 0.002683687966494502,
+    "psi_norm_max": 0.007812715316430392,
+    "edge_params": 54,
+    "edge_rank": 54,
+    "absorbable_share": 0.1201721912835404,
+    "orthogonal_share": 0.8798278087164596,
+    "n_configs": 80,
+    "pos_test_on": 1.2477779225305636,
+    "pos_test_off": 1.3885849968755515
+  },
+  "G3b:_meta_local": {
+    "wall_s": 684.9045190811157
+  },
+  "_meta": {
+    "script": "G3b_orthogonality_twoslot.py",
+    "git_head": "8e55295bfef2654e37c6bd3978d6844c38ad9b98",
+    "git_branch": "main",
+    "date": "2026-10-15 16:23:49",
+    "quick": false,
+    "seeds": 1,
+    "seed_start": null,
+    "epochs": 4000,
+    "torch": "2.4.1+cu121",
+    "args": {
+      "data": "${QUATKAN}/data/calib_data.pickle",
+      "N": 80,
+      "epochs": 4000,
+      "lr": 0.005,
+      "quick": false
+    }
+  }
+}

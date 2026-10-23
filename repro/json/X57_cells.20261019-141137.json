@@ -1,0 +1,48 @@
+{
+  "cells": {
+    "quat14": {
+      "k": 20,
+      "kernel": true,
+      "canon": false,
+      "max": 13.184722972680758,
+      "final": 1.2851301630999257
+    },
+    "global-only": {
+      "k": 20,
+      "kernel": false,
+      "canon": false,
+      "max": 3.167997500430813,
+      "final": 1.2340968395357268
+    },
+    "k=n": {
+      "k": 60,
+      "kernel": true,
+      "canon": false,
+      "max": 40.192869834541426,
+      "final": 1.6035084260492793
+    },
+    "canon": {
+      "k": 20,
+      "kernel": true,
+      "canon": true,
+      "max": 9.569708666136101,
+      "final": 1.2747703458723236
+    }
+  },
+  "_meta": {
+    "script": "X57_cells.py",
+    "git_head": "b539cf1a3c937bcfee53bde6dd688652bc46f1d8",
+    "git_branch": "main",
+    "date": "2026-10-19 14:11:37",
+    "quick": false,
+    "seeds": 1,
+    "seed_start": null,
+    "epochs": 200,
+    "torch": "2.4.1+cu121",
+    "args": {
+      "seed": 3,
+      "N": 60,
+      "epochs": 200
+    }
+  }
+}

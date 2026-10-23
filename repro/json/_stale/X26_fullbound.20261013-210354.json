@@ -1,0 +1,122 @@
+{
+  "X26:edge_b:rms_mm": {
+    "mean": 3.1942818098296057,
+    "std": 0.0,
+    "per_seed": [
+      3.1942818098296057
+    ]
+  },
+  "X26:base:rms_mm": {
+    "mean": 2.1918317687715057,
+    "std": 0.0,
+    "per_seed": [
+      2.1918317687715057
+    ]
+  },
+  "X26:tanh:rms_mm": {
+    "mean": 2.191730236718036,
+    "std": 0.0,
+    "per_seed": [
+      2.191730236718036
+    ]
+  },
+  "X26:tanh_l2:rms_mm": {
+    "mean": 2.763117781575771,
+    "std": 0.0,
+    "per_seed": [
+      2.763117781575771
+    ]
+  },
+  "X26:paired:base_vs_edge_b": {
+    "diff": -1.0024500410581,
+    "t": NaN,
+    "p": NaN,
+    "n_collapsed": 0
+  },
+  "X26:paired:tanh_vs_edge_b": {
+    "diff": -1.0025515731115697,
+    "t": NaN,
+    "p": NaN,
+    "n_collapsed": 0
+  },
+  "X26:paired:tanh_l2_vs_edge_b": {
+    "diff": -0.4311640282538347,
+    "t": NaN,
+    "p": NaN,
+    "n_collapsed": 0
+  },
+  "X26:paired:tanh_vs_base": {
+    "diff": -0.0001015320534696329,
+    "t": NaN,
+    "p": NaN
+  },
+  "X26:paired:tanh_l2_vs_base": {
+    "diff": 0.5712860128042654,
+    "t": NaN,
+    "p": NaN
+  },
+  "X26:share_trans": {
+    "per_seed": [
+      0.502739061571657
+    ],
+    "mean": 0.502739061571657
+  },
+  "X26:stats": {
+    "base": [
+      {
+        "eff_rot_max": 0.001506491565569492,
+        "eff_trans_max": 0.001385920082324358
+      }
+    ],
+    "tanh": [
+      {
+        "eff_rot_max": 0.0015071912340881802,
+        "eff_trans_max": 0.0014021619170626765,
+        "sat_max": 0.2804323834125353
+      }
+    ],
+    "tanh_l2": [
+      {
+        "eff_rot_max": 0.00042571849958093457,
+        "eff_trans_max": 0.0005540619511757305,
+        "sat_max": 0.11081239023514611
+      }
+    ]
+  },
+  "X26:protocol": {
+    "platform": "kinova",
+    "seeds": [
+      0
+    ],
+    "steps": 80,
+    "lr": 0.001,
+    "b_rot": 0.02,
+    "b_trans": 0.005,
+    "l2": 0.01,
+    "gain": 0.1,
+    "collapse": "iso_rms > edge_b_rms"
+  },
+  "_meta_local": {
+    "wall_s": 82.45038866996765
+  },
+  "_meta": {
+    "script": "X26_fullbound.py",
+    "git_head": "3de3a35fc5dc40f4c06dcb7e341cb6a046b25aec",
+    "git_branch": "main",
+    "date": "2026-10-13 21:03:54",
+    "quick": false,
+    "seeds": 1,
+    "seed_start": null,
+    "epochs": 80,
+    "torch": "2.4.1+cu121",
+    "args": {
+      "seed_list": "0",
+      "steps": 80,
+      "lr": 0.001,
+      "b_rot": 0.02,
+      "b_trans": 0.005,
+      "l2": 0.01,
+      "quick": false
+    }
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "X37:c-5s:dense:wd0": {
+    "per_seed": [
+      75.16146502157758,
+      1.2209627612137883,
+      1.3357950910879348
+    ],
+    "wd": 0.0,
+    "mean": 25.9060742912931,
+    "std": 34.82885234601471,
+    "max": 75.16146502157758,
+    "min": 1.2209627612137883,
+    "spread": 73.9405022603638
+  },
+  "X37:c-5s:dense:wd0.003": {
+    "per_seed": [
+      78.05870186146682,
+      1.2878040827111084,
+      1.3298190336637816
+    ],
+    "wd": 0.003,
+    "mean": 26.892108325947234,
+    "std": 36.1802493250653,
+    "max": 78.05870186146682,
+    "min": 1.2878040827111084,
+    "spread": 76.77089777875571
+  },
+  "X37:c-5s:sparse:wd0": {
+    "per_seed": [
+      1.1691390546252547,
+      1.1721409581947781,
+      1.1554675389540165
+    ],
+    "wd": 0.0,
+    "mean": 1.1655825172580165,
+    "std": 0.007256603697229679,
+    "max": 1.1721409581947781,
+    "min": 1.1554675389540165,
+    "spread": 0.0166734192407616
+  },
+  "X37:protocol": {
+    "blocks": [
+      "c-5s"
+    ],
+    "seed_count": 3,
+    "epochs": 3000,
+    "wds": [
+      0.0,
+      0.003
+    ],
+    "groups": [
+      "disturbed"
+    ],
+    "head": "dense 27p IMU edge + L2 weight-decay dose vs sparse 18p",
+    "note": "P-D: dose removes the outlier seed; mean not improved (noise floor)"
+  },
+  "_meta_local": {
+    "wall_s": 14105.581515550613
+  },
+  "_meta": {
+    "script": "X37_broad_edge_capacity.py",
+    "git_head": "8e55295bfef2654e37c6bd3978d6844c38ad9b98",
+    "git_branch": "main",
+    "date": "2026-10-15 16:12:21",
+    "quick": false,
+    "seeds": 3,
+    "seed_start": null,
+    "epochs": 3000,
+    "torch": "2.4.1+cu121",
+    "args": {
+      "data_dir": "${BROAD_ROOT}/data_hdf5",
+      "groups": "disturbed",
+      "seeds": 3,
+      "epochs": 3000,
+      "wds": "0,3e-3",
+      "only": "c-5s",
+      "quick": false
+    }
+  }
+}

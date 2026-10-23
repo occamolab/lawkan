@@ -1,0 +1,46 @@
+{
+  "POOL2:abb": {
+    "diff": -0.1616812466514177,
+    "p": 0.008913680355832258
+  },
+  "POOL2:kuka": {
+    "diff": -0.383389384703143,
+    "p": 2.190481632932347e-11
+  },
+  "POOL2:kinova": {
+    "diff": -0.5537361181039648,
+    "p": 5.741989125218957e-05,
+    "gate": true
+  },
+  "POOL2:primary": {
+    "chi2": 58.52896528668242,
+    "p": 5.909216835905453e-12,
+    "met": true
+  },
+  "POOL2:extended": {
+    "claimed": true,
+    "chi2": 78.05920484103125,
+    "p": 8.987989238153118e-15,
+    "composition": [
+      "abb_N80",
+      "kuka_front",
+      "kinova_front"
+    ],
+    "heads": [
+      "global",
+      "two-slot",
+      "kernel"
+    ]
+  },
+  "_meta": {
+    "script": "POOL2_verdict.py",
+    "git_head": "1b8ca22b91cb0997f07fe1a5ec061a6e02979de7",
+    "git_branch": "main",
+    "date": "2026-10-15 22:12:49",
+    "quick": false,
+    "seeds": null,
+    "seed_start": null,
+    "epochs": null,
+    "torch": "2.4.1+cu121"
+  }
+}

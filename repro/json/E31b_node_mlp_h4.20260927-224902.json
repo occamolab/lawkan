@@ -1,0 +1,79 @@
+{
+  "E31b:node+MLP h=4 (2L, 110p)": {
+    "mean": 3.6859875202178953,
+    "std": 0.39102979443675645,
+    "per_seed": [
+      3.619685173034668,
+      3.4413013458251953,
+      3.5113515853881836,
+      4.454081058502197,
+      3.4035184383392334
+    ],
+    "params": 110,
+    "lr": 0.003,
+    "held_out_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "E31b:node+MLP h=4 (1L, 70p)": {
+    "mean": 5.555140972137451,
+    "std": 0.7389492087720214,
+    "per_seed": [
+      5.781411170959473,
+      5.061733722686768,
+      6.838749408721924,
+      5.415227890014648,
+      4.678582668304443
+    ],
+    "params": 70,
+    "lr": 0.003,
+    "held_out_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "E31b:ttest:E31b:node+MLP h=4 (2L, 110p) vs E31:plain MLP-Quat h=32": {
+    "text": "t=1.60, df=4, p=1.85e-01"
+  },
+  "E31b:ttest:E31b:node+MLP h=4 (2L, 110p) vs E31:single-exp MLP-Lie h=32": {
+    "text": "t=1.93, df=4, p=1.26e-01"
+  },
+  "E31b:ttest:E31b:node+MLP h=4 (1L, 70p) vs E31:plain MLP-Quat h=32": {
+    "text": "t=5.74, df=4, p=4.56e-03"
+  },
+  "E31b:ttest:E31b:node+MLP h=4 (1L, 70p) vs E31:single-exp MLP-Lie h=32": {
+    "text": "t=5.87, df=4, p=4.19e-03"
+  },
+  "E31b:P51.1": {
+    "text": "FAIL: 2L h=4 3.6860 in (2.784, 3.288)"
+  },
+  "E31b:P51.2": {
+    "text": "PASS: 1L h=4 5.5551 > 2L h=4 3.6860 (paired t=4.50, p=1.08e-02)"
+  },
+  "E31b:wall_s": 185.0248203277588,
+  "_meta": {
+    "script": "E31b_node_mlp_h4.py",
+    "git_head": "fd6243a64d6e5923bb5a4888cedda4ac6144e318",
+    "git_branch": "main",
+    "date": "2026-09-27 22:49:02",
+    "quick": false,
+    "seeds": 5,
+    "seed_start": 0,
+    "epochs": 3000,
+    "torch": "2.4.1+cu121",
+    "args": {
+      "quick": false,
+      "epochs": 3000,
+      "seeds": 5,
+      "seed_start": 0
+    },
+    "ref_dump": "E31_node_isolation.20260927-222500.json"
+  }
+}

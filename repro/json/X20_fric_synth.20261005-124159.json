@@ -1,0 +1,45 @@
+{
+  "X20:sign_frac": 1.0,
+  "X20:sign_perm_p": 0.0,
+  "X20:floor_mm": 4.086348097283035,
+  "X20:corrected_mm": 0.08593685547943003,
+  "X20:gain_pct": 97.89697662965698,
+  "X20:gamma": [
+    0.005229414919209201,
+    0.005217904586001721,
+    0.005235705180189122,
+    0.005281039109569192,
+    0.005175034381568711,
+    0.005179092197441161,
+    4.545612857169036e-14
+  ],
+  "X20:shuffled_gain_pct": 3.0083912188451967,
+  "X20:nofriction_floor_mm": 0.08129980558912056,
+  "X20:nofriction_corrected_mm": 0.08213114274302499,
+  "X20:nofriction_effect_mm": 0.0008313371539044323,
+  "X20:protocol": {
+    "poses": 600,
+    "steps": 4000,
+    "beta_deg": 0.3,
+    "noise_mm": 0.05
+  },
+  "_meta": {
+    "script": "X20_fric_synth.py",
+    "git_head": "e8025ab157b897f52f296b1f22c9e84793a32ce0",
+    "git_branch": "main",
+    "date": "2026-10-05 12:41:59",
+    "quick": false,
+    "seeds": null,
+    "seed_start": null,
+    "epochs": null,
+    "torch": "2.4.1+cu121",
+    "args": {
+      "poses": 600,
+      "steps": 4000,
+      "lr": 0.01,
+      "beta_deg": 0.3,
+      "noise_mm": 0.05,
+      "quick": false
+    }
+  }
+}

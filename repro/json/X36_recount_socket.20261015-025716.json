@@ -1,0 +1,190 @@
+{
+  "X36:panda_1:edge_b:rms_mm": {
+    "mean": 0.8557612180171212,
+    "std": 0.05611652272911414,
+    "per_seed": [
+      0.9363987828186019,
+      0.8790800535779943,
+      0.7952213312132134,
+      0.8123447044586752
+    ]
+  },
+  "X36:panda_1:mlp:rms_mm": {
+    "mean": 0.30068781255998145,
+    "std": 0.014930609521537042,
+    "per_seed": [
+      0.30374013886270756,
+      0.2866065228258574,
+      0.28854905138495013,
+      0.3238555371664106
+    ]
+  },
+  "X36:panda_1:kernel:rms_mm": {
+    "mean": NaN,
+    "std": NaN,
+    "per_seed": [
+      NaN,
+      NaN,
+      NaN,
+      NaN
+    ]
+  },
+  "X36:panda_1:twoslot:rms_mm": {
+    "mean": 0.2935624668698413,
+    "std": 0.021954851532986843,
+    "per_seed": [
+      0.30965564847335314,
+      0.28617252017654854,
+      0.2611342838471856,
+      0.3172874149822778
+    ]
+  },
+  "X36:panda_1:koff:rms_mm": {
+    "mean": 0.7876994321437706,
+    "std": 0.01739876726318963,
+    "per_seed": [
+      0.7811479636157646,
+      0.816740669221648,
+      0.7824402965068178,
+      0.770468799230852
+    ]
+  },
+  "X36:panda_1:goff:rms_mm": {
+    "mean": 0.43688003249226265,
+    "std": 0.09209074825624004,
+    "per_seed": [
+      0.5904215552749184,
+      0.4203332479255015,
+      0.34980513380904094,
+      0.38696019295958983
+    ]
+  },
+  "X36:panda_1:n_collapse_kernel": 0,
+  "X36:panda_1:paired:twoslot_vs_mlp": {
+    "diff": -0.007125345690140172,
+    "t": -0.9858910189367583,
+    "p": 0.39687748742281387
+  },
+  "X36:panda_1:n_collapse_twoslot": 0,
+  "X36:panda_1:n_collapse_mlp": 0,
+  "X36:kuka14:edge_b:rms_mm": {
+    "mean": 0.550689673216194,
+    "std": 0.03525298001495658,
+    "per_seed": [
+      0.5079331675217119,
+      0.5244788931583153,
+      0.5914072304834715,
+      0.5789394017012771
+    ]
+  },
+  "X36:kuka14:mlp:rms_mm": {
+    "mean": 0.1995559613032809,
+    "std": 0.039324523062779636,
+    "per_seed": [
+      0.18485506253524212,
+      0.14322877271087964,
+      0.22335870146708703,
+      0.2467813084999148
+    ]
+  },
+  "X36:kuka14:kernel:rms_mm": {
+    "mean": NaN,
+    "std": NaN,
+    "per_seed": [
+      NaN,
+      NaN,
+      NaN,
+      NaN
+    ]
+  },
+  "X36:kuka14:twoslot:rms_mm": {
+    "mean": 0.16958327130075257,
+    "std": 0.023281088379669555,
+    "per_seed": [
+      0.15469690011128417,
+      0.14511977934371728,
+      0.17232061222744124,
+      0.2061957935205676
+    ]
+  },
+  "X36:kuka14:koff:rms_mm": {
+    "mean": 0.5123110329675948,
+    "std": 0.035321443737388325,
+    "per_seed": [
+      0.48731543011781947,
+      0.4689812673581891,
+      0.5376990145343375,
+      0.5552484198600334
+    ]
+  },
+  "X36:kuka14:goff:rms_mm": {
+    "mean": 0.22855275361384836,
+    "std": 0.05546951105926067,
+    "per_seed": [
+      0.18430514917733926,
+      0.18289958732833844,
+      0.22754484130106972,
+      0.31946143664864607
+    ]
+  },
+  "X36:kuka14:n_collapse_kernel": 0,
+  "X36:kuka14:paired:twoslot_vs_mlp": {
+    "diff": -0.029972690002528335,
+    "t": -2.6189654488991434,
+    "p": 0.07907181981004609
+  },
+  "X36:kuka14:n_collapse_twoslot": 0,
+  "X36:kuka14:n_collapse_mlp": 0,
+  "X36:protocol": {
+    "platforms": "panda_1,kuka14",
+    "seeds": [
+      0,
+      1,
+      2,
+      8,
+      9
+    ],
+    "socket_seeds": "0,1,2,3",
+    "fr3_seeds": "",
+    "abb_seeds": "0,1,2,8,9",
+    "heads": [
+      "twoslot"
+    ],
+    "steps": 3000,
+    "centers": 20,
+    "head": "MLP (reference) / local kernel (X32) / two-slot, isolated on the frozen edge_b/exact",
+    "abb_sizes": "80,160,320"
+  },
+  "_meta_local": {
+    "wall_s": 4398.440441131592
+  },
+  "_meta": {
+    "script": "X36_recount_socket.py",
+    "git_head": "cc14f4c9ebade6295409c14af70d3e5e235959f8",
+    "git_branch": "main",
+    "date": "2026-10-15 02:57:16",
+    "quick": false,
+    "seeds": 5,
+    "seed_start": null,
+    "epochs": 3000,
+    "torch": "2.4.1+cu121",
+    "args": {
+      "platforms": "panda_1,kuka14",
+      "data": "${QUATKAN}/data/robotcali/RobotCali-new.xlsx",
+      "seed_list": "0,1,2,8,9",
+      "heads": "twoslot",
+      "dose_override": 0.0,
+      "seq": true,
+      "socket_seeds": "0,1,2,3",
+      "fr3_seeds": "",
+      "abb_seeds": "",
+      "abb_sizes": "80,160,320",
+      "steps": 3000,
+      "lr": 0.001,
+      "abb_lr": 0.01,
+      "centers": 20,
+      "skip_abb": true,
+      "quick": false
+    }
+  }
+}

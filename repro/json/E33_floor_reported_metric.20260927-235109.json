@@ -1,0 +1,60 @@
+{
+  "E33:n2:extrinsic": {
+    "mean": 2.69728684425354
+  },
+  "E33:n2:intrinsic": {
+    "mean": 2.6972901821136475
+  },
+  "E33:n2:delta": {
+    "mean": 3.337860107421875e-06
+  },
+  "E33:n2:posterior_spread": {
+    "mean": 1.9020336866378784
+  },
+  "E33:n3:extrinsic": {
+    "mean": 3.0565524101257324
+  },
+  "E33:n3:intrinsic": {
+    "mean": 3.0565547943115234
+  },
+  "E33:n3:delta": {
+    "mean": 2.384185791015625e-06
+  },
+  "E33:n3:posterior_spread": {
+    "mean": 2.359076738357544
+  },
+  "E33:random (P16b):extrinsic": {
+    "mean": 37.710792541503906
+  },
+  "E33:random (P16b):intrinsic": {
+    "mean": 37.798377990722656
+  },
+  "E33:random (P16b):delta": {
+    "mean": 0.08758544921875
+  },
+  "E33:random (P16b):posterior_spread": {
+    "mean": 37.42964172363281
+  },
+  "E33:P(E33.1)": {
+    "text": "PASS: intrinsic n2 2.697 <= old 2.697 + 0.05"
+  },
+  "E33:wall_s": 0.47551918029785156,
+  "_meta": {
+    "script": "E33_floor_reported_metric.py",
+    "git_head": "1cc783dbd271202c03873205ef11a58ce8425454",
+    "git_branch": "main",
+    "date": "2026-09-27 23:51:09",
+    "quick": false,
+    "seeds": null,
+    "seed_start": null,
+    "epochs": null,
+    "torch": "2.4.1+cu121",
+    "args": {
+      "quick": false,
+      "iters": 20
+    },
+    "N": 2000,
+    "M": 256,
+    "Mrnd": 2048
+  }
+}

@@ -1,0 +1,61 @@
+# LawKAN
+
+> LawKAN is a group-law architecture built on one principle: **impose every piece of
+> structure known in advance, and learn only the remainder.** The node applies the exact
+> **group law** (a known symmetry of composition); the edge learns only the local increment;
+> and where the deviation's form is unknown, a small zero-initialized correction in the node
+> learns it. Composition (SU(2) rotation composition is the leading instance; GL⁺(2,ℝ) and
+> SE(3) follow the same recipe). Repository: https://anonymous.4open.science/r/lawkan-6A4A/ — code and
+> reproduction artifact for the LawKAN paper.
+
+## Key facts
+
+- Architecture: exact group-law **node** (no parameters by default) + learned **edge**
+  (chart → increment) + optional zero-initialized learned correction **ψ** to the law.
+- Groups tested: compact SU(2), non-compact GL⁺(2,ℝ), mixed SE(3).
+- Synthetic composition: most accurate model at 27× fewer parameters than the strongest
+  matrix opponent (92× fewer than the strongest tuned opponent), 0.05° above the matched
+  Bayes floor.
+- Real arm calibration (FR3, 114 poses): the isolated 306-parameter two-slot correction
+  beats the exact model and the same-class Gauss–Newton fit at every size (1.12/1.14 mm vs
+  GN 1.29–1.33, exact node 1.37–1.40 at N=60/80; significant at N=40/80); replicates across
+  three robot vendors and two measurement protocols (pooled p < 10⁻¹⁰).
+- Parity with classical fits on consumer IMUs, a gyroscope and three robot arms; the model
+  loses where no group law is present.
+- Honest boundaries: Kinova Gen3 lite correction is seed-unstable (2/10 collapse, TOST
+  fails) — localized and fixed in the revision round, where a two-slot global+local head
+  removes the collapse (X32-X34); the dense classical screw class still wins on the FR3
+  unit; dense IMU edge is seed-bimodal at long horizons. Pole-fix branch X37-X61: the spike
+  is chart/operand + trajectory, EMA removes it; the representation gap is not chart-caused.
+- Revision round (capacity and locality, X22-X36): two mechanism hypotheses refuted
+  (exponential winding, unbounded magnitude); the remedy is an L2 weight-decay window (X26)
+  and a local kernel head (X32/X34); the recommended two-slot psi head dominates both pure
+  heads at every training size (X33).
+- Pole-fix branch (X37-X61): operand chart singularity confirmed, quaternion features halve
+  the spike, group-metric kernel does not cure the floor, EMA removes the spikes; T1/T2
+  closing the branch (T2 confirmed, T1 equivalence not established).
+- License: AGPL-3.0-or-later (research use is free; commercial licensing on request).
+- Reproducibility: 120 canonical blocks pinned in `repro/canonical.json`; 171 displayed
+  numbers checked by `repro/check_numbers.py`, 18 derived statistics by
+  `repro/stats/check_derived.py`, and the portable CPU run by
+  `repro/check_cpu_reference.py`; registry-driven tiers via `repro/run_registry.py`
+  (`smoke`, `headline`, `full`; CPU reference default, GPU optional).
+- Registered predictions: 130 verdicts (59 battery + 30 validity + 30 revision + 11 branch);
+  the full per-entry log is `docs/predictions.md`.
+- Version: v1.0.0. Citation metadata: `CITATION.cff` (paper reference added at publication).
+
+## Docs
+
+- [README](README.md): overview, main results, quickstart, headline experiment
+- [docs/results.md](docs/results.md): headline numbers per probe with their sources
+- [docs/faq.md](docs/faq.md): frequently asked questions (scope, comparison, boundaries)
+- [docs/glossary.md](docs/glossary.md): terms (chart, edge, node, increment, analytic support, ψ)
+- [docs/paper.md](docs/paper.md): paper title and abstract
+- [docs/blocks.md](docs/blocks.md): script-by-script map to the paper
+- [docs/predictions.md](docs/predictions.md): registered-predictions log (prediction → outcome → verdict)
+- [REPRODUCE.md](REPRODUCE.md): data prerequisites and paper-item → command map
+- [THIRD_PARTY.md](THIRD_PARTY.md): third-party data and libraries
+
+## Optional
+
+- [llms-full.txt](llms-full.txt): the above documents concatenated for single-fetch reading

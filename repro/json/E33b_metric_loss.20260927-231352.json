@@ -1,0 +1,72 @@
+{
+  "E33b:QuatKAN K=1, metric loss": {
+    "mean": 2.791566801071167,
+    "std": 0.013960406188217016,
+    "per_seed": [
+      2.8007566928863525,
+      2.8091142177581787,
+      2.794344902038574,
+      2.785139799118042,
+      2.7684783935546875
+    ],
+    "lr": 0.01,
+    "held_out_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "E33b:MLP-Quat h=32, metric loss": {
+    "mean": 3.5634811878204347,
+    "std": 0.0753352378207595,
+    "per_seed": [
+      3.6870245933532715,
+      3.5967354774475098,
+      3.470341682434082,
+      3.5060882568359375,
+      3.557215929031372
+    ],
+    "lr": 0.003,
+    "held_out_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "E33b:ttest:QuatKAN vs MLP": {
+    "text": "t=-21.66, df=4, p=2.69e-05"
+  },
+  "E33b:P53.1": {
+    "text": "FAIL: metric-loss QuatKAN 2.7916 <= 2.10 (1-cos 2.784)"
+  },
+  "E33b:P53.2": {
+    "text": "FAIL: 2.7916 <= floor+0.25 (2.152)"
+  },
+  "E33b:P53.3": {
+    "text": "FAIL: MLP 3.5635 <= 3.05 and QuatKAN<MLP p=2.69e-05"
+  },
+  "E33b:wall_s": 141.86532950401306,
+  "_meta": {
+    "script": "E33b_metric_loss.py",
+    "git_head": "d37ba0e8a798a95257ad4351a0641ea54a860091",
+    "git_branch": "main",
+    "date": "2026-09-27 23:13:52",
+    "quick": false,
+    "seeds": 5,
+    "seed_start": 0,
+    "epochs": 3000,
+    "torch": "2.4.1+cu121",
+    "args": {
+      "quick": false,
+      "epochs": 3000,
+      "seeds": 5,
+      "seed_start": 0
+    },
+    "floor": 1.9020336866378784,
+    "ref_dump": "E31_node_isolation.20260927-222500.json"
+  }
+}

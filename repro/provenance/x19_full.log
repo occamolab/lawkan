@@ -1,0 +1,38 @@
+x19 start 10:58
+[X19] n=114, tau range per joint: [0.0, 44.67, 20.09, 14.35, 0.56, 0.93, 0.0]
+[X19 seed 0 n=20] exact 1.717 physics 1.697
+[X19 seed 0 n=40] exact 1.694 physics 1.717
+[X19 seed 0 n=60] exact 1.510 physics 1.548
+[X19 seed 0 n=80] exact 1.389 physics 1.446
+[X19] seed 0 done
+[X19 seed 1 n=20] exact 1.352 physics 1.345
+[X19 seed 1 n=40] exact 1.449 physics 1.441
+[X19 seed 1 n=60] exact 1.390 physics 1.425
+[X19 seed 1 n=80] exact 1.493 physics 1.534
+[X19] seed 1 done
+[X19 seed 2 n=20] exact 1.492 physics 1.500
+[X19 seed 2 n=40] exact 1.358 physics 1.430
+[X19 seed 2 n=60] exact 1.340 physics 1.344
+[X19 seed 2 n=80] exact 1.430 physics 1.412
+[X19] seed 2 done
+[X19 seed 3 n=20] exact 1.339 physics 1.339
+[X19 seed 3 n=40] exact 1.512 physics 1.548
+[X19 seed 3 n=60] exact 1.364 physics 1.333
+[X19 seed 3 n=80] exact 1.369 physics 1.328
+[X19] seed 3 done
+[X19 seed 4 n=20] exact 1.768 physics 1.794
+[X19 seed 4 n=40] exact 1.428 physics 1.494
+[X19 seed 4 n=60] exact 1.263 physics 1.315
+[X19 seed 4 n=80] exact 1.321 physics 1.313
+[X19] seed 4 done
+${PYTHON_PREFIX}/lib/python3.8/site-packages/torch/autograd/graph.py:769: UserWarning: CUDA initialization: CUDA unknown error - this may be due to an incorrectly set up environment, e.g. changing env variable CUDA_VISIBLE_DEVICES after program start. Setting the available devices to be zero. (Triggered internally at ../c10/cuda/CUDAFunctions.cpp:108.)
+  return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+Traceback (most recent call last):
+  File "X19_tau_psi.py", line 241, in <module>
+    main()
+  File "X19_tau_psi.py", line 196, in main
+    g = generic_ref(n_tr)[:len(a)]
+  File "X19_tau_psi.py", line 144, in generic_ref
+    return np.array(d[f'G2f:fourier:n{n}:isolated']['per_seed'])[:5]
+KeyError: 'G2f:fourier:n20:isolated'
+x19 exit 1 11:44

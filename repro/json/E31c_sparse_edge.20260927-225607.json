@@ -1,0 +1,53 @@
+{
+  "E31c:node+sparse (18p)": {
+    "mean": 2.747024488449097,
+    "std": 0.016485248630269983,
+    "per_seed": [
+      2.758190393447876,
+      2.7651655673980713,
+      2.757207155227661,
+      2.7239904403686523,
+      2.7305688858032227
+    ],
+    "params": 18,
+    "lr": 0.01,
+    "held_out_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "E31c:ttest:sparse vs E31:plain MLP-Quat h=32": {
+    "text": "t=-19.68, df=4, p=3.93e-05"
+  },
+  "E31c:ttest:sparse vs E31:single-exp MLP-Lie h=32": {
+    "text": "t=-12.28, df=4, p=2.53e-04"
+  },
+  "E31c:P52.1": {
+    "text": "PASS: sparse 2.7470 below both controls (p<0.01)"
+  },
+  "E31c:P52.2": {
+    "text": "PASS: sparse 2.7470 <= dense K=1 2.7837 (paired t=-10.16, p=5.28e-04)"
+  },
+  "E31c:wall_s": 88.67139005661011,
+  "_meta": {
+    "script": "E31c_sparse_edge.py",
+    "git_head": "b92b592d6404b99c496c4b61425cb6e6c70fe650",
+    "git_branch": "main",
+    "date": "2026-09-27 22:56:07",
+    "quick": false,
+    "seeds": 5,
+    "seed_start": 0,
+    "epochs": 3000,
+    "torch": "2.4.1+cu121",
+    "args": {
+      "quick": false,
+      "epochs": 3000,
+      "seeds": 5,
+      "seed_start": 0
+    },
+    "ref_dump": "E31_node_isolation.20260927-222500.json"
+  }
+}

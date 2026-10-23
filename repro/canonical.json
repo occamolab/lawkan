@@ -1,0 +1,472 @@
+{
+ "_comment": "Canonical dump per experiment block. Tools (make_tables.py, check_numbers.py) MUST resolve through this manifest, never by 'latest filename'. Old/superseded dumps live in repro/json/_stale/ and are not cited.",
+ "bayes": {
+  "file": "bayes.20260925-033223.json"
+ },
+ "e16v2": {
+  "file": "e16v2.20260925-011500.json"
+ },
+ "e19": {
+  "file": "e19.20260924-082107.json"
+ },
+ "e19b": {
+  "file": "E19b_random_mask.20260928-001743.json",
+  "note": "P63 (renumbered from P56) random equal-size mask control, seeds 0-4, 5 masks/seed"
+ },
+ "e20": {
+  "file": "E20_higher_harmonic.20260927-200649.json",
+  "note": "fresh B2-fixed rerun, seeds 10-14; source of Table 10 (order rule) and P35"
+ },
+ "e20s0": {
+  "file": "E20_higher_harmonic.20260927-195037.json",
+  "note": "fresh B2-fixed rerun, seeds 0-4; consistency check for Table 10"
+ },
+ "e21": {
+  "file": "e21.20260927-200650.json",
+  "note": "clean rerun, replication seeds 10-14 (P36); matches 023122"
+ },
+ "e22": {
+  "file": "e22.20260927-201735.json",
+  "note": "clean rerun, replication seeds 10-14 (P37); matches 023122"
+ },
+ "e23": {
+  "file": "e23.20260925-030000.json",
+  "note": "blind RT-1 seeds 20-24 (P38); the historical check:4 used sp0.25 (4.02), corrected sp1.0/sp0.5 from this dump = 2.0048"
+ },
+ "e24": {
+  "file": "e24.20260925-033227.json",
+  "note": "blind RT-2 seeds 20-24 (P39)"
+ },
+ "e25": {
+  "file": "e25.20260926-rigid.json"
+ },
+ "e25b": {
+  "file": "e25b.20260926-ffpoly.json"
+ },
+ "e26b": {
+  "file": "E26b_baxter_dynamics.20260930-012330.json",
+  "note": "real Baxter dynamics audit"
+ },
+ "e26c": {
+  "file": "E26c_error_law.20260930-030156.json",
+  "note": "deterministic error-accumulation law on the edge (Baxter)"
+ },
+ "e29": {
+  "file": "e29.20260926-featurespan.json",
+  "note": "run 2026-09-27, seeds 50-54 (P45); rename pending"
+ },
+ "e30": {
+  "file": "e30.20260926-fullso3.json"
+ },
+ "e30_corr": {
+  "file": "E30_full_so3.20261023-113126.json",
+  "note": "E30-correction: robust Shepperd conversion on the same GPU/seeds; 6D 7.734, 9D-SVD 7.731; LawKAN/Lie/MLP unchanged"
+ },
+ "e31": {
+  "file": "E31_node_isolation.20260927-222500.json",
+  "note": "P49 node/edge isolation, seeds 0-4"
+ },
+ "e31b": {
+  "file": "E31b_node_mlp_h4.20260927-224902.json",
+  "note": "P51 capacity bracket, seeds 0-4"
+ },
+ "e31c": {
+  "file": "E31c_sparse_edge.20260927-225607.json",
+  "note": "P52 analytic-support 18p edge under E31 protocol, seeds 0-4"
+ },
+ "e31d": {
+  "file": "E31d_pruning_curve.20260927-234607.json",
+  "note": "P54 refuted: magnitude pruning does not recover the 18p support on comp2"
+ },
+ "e31d_corr": {
+  "file": "E31d_pruning_curve.20261022-210922.json",
+  "note": "E31d-correction (P54.3c): K=2 support indices fixed to {1,7,12}; curve identical; support 1/5, P54 still refuted"
+ },
+ "e32": {
+  "file": "E32_opponent_tuning.20260927-223025.json",
+  "note": "P50 opponent tuning grid, seeds 0-2"
+ },
+ "e33": {
+  "file": "E33_floor_reported_metric.20260927-235109.json",
+  "note": "corrected: intrinsic floor evaluated against Y (same estimand as E10); intrinsic=extrinsic=2.697"
+ },
+ "e33b": {
+  "file": "E33b_metric_loss.20260927-231352.json",
+  "note": "P53 refuted: metric loss does not close the gap"
+ },
+ "e33c": {
+  "file": "E33c_metric_loss_stable.20260927-235033.json",
+  "note": "P55: stable metric loss, same result (2.793)"
+ },
+ "e36": {
+  "file": "E36_e30_mc_floor.20260928-044641.json",
+  "note": "MC SO(3) floor for E30 with input noise; LawKAN +0.068"
+ },
+ "e38": {
+  "file": "E38_tuned_opponents.20261022-122211.json",
+  "note": "fairness audit: tuned opponents and per-edge lr; E38"
+ },
+ "e39": {
+  "file": "E39_sample_efficiency_tuned.20261022-125252.json",
+  "note": "sample efficiency of tuned opponents (fairness audit); E39"
+ },
+ "e40": {
+  "file": "E40_floor_matched.20261022-142615.json",
+  "note": "matched Bayes floor on the E1 test draws (N=4000, seeds 100-104); E40"
+ },
+ "g2a": {
+  "file": "G2a_ur10_isolated.20261001-010455.json",
+  "note": "isolated law correction on UR10"
+ },
+ "g2bc": {
+  "file": "G2bc_isolated_psi.20261005-052326.json",
+  "note": "P-D 10 seeds (random) at N=60/80"
+ },
+ "g2bc_cluster": {
+  "file": "G2bc_isolated_psi.20261005-123021.json",
+  "note": "P-E cluster split (G2fC keys)"
+ },
+ "g2bc_fig": {
+  "file": "G2bc_isolated_psi.20261001-061528.json",
+  "note": "Figure 3 protocol curve (5 seeds, N=20..80); read by fig13/fig14 and X19_recover"
+ },
+ "g3": {
+  "file": "G3_orthogonality.20261001-191447.json",
+  "note": "correction-vs-edge orthogonality decomposition"
+ },
+ "g3b": {
+  "file": "G3b_orthogonality_twoslot.20261015-162349.json",
+  "note": "orthogonality of the final two-slot psi (88% orthogonal); G3b"
+ },
+ "g4": {
+  "file": "G4_gauge_compare.20261001-204528.json",
+  "note": "isolation vs sparse vs projected correction (FR3)"
+ },
+ "kinova": {
+  "file": "MK1_mukca.20261005-074656.json",
+  "note": "P-MK7 Kinova Gen3 lite front (10 seeds; boundary: dense wins, TOST fails)"
+ },
+ "mk1": {
+  "file": "MK1_mukca.20261005-074656.json",
+  "note": "P-D 10 seeds: KUKA front / Panda / Kinova"
+ },
+ "mk1_fr3": {
+  "file": "MK1_mukca.20261004-155531.json",
+  "note": "FR3 unit (5 seeds); also the 5-seed front trio quoted in the shuffle-control comparison (0.21/0.29)"
+ },
+ "mk1_views": {
+  "file": "MK1_mukca.20261005-015033.json",
+  "note": "P-MK8 KUKA cross-view (left_back/raised_left), 5 seeds"
+ },
+ "mk1c": {
+  "file": "MK1c_shuffle_control.20261004-160233.json",
+  "note": "shuffled-label control (P-MK6): 60.5/59.3 mm KUKA/Panda under rng(2000) permutation"
+ },
+ "pool": {
+  "file": "POOL2_verdict.20261015-221248.json",
+  "note": "final heads: primary Fisher 58.529 (p 5.9e-12); extended with Kinova 78.059 (p 9.0e-15). POOL_verdict.20261005-... is the historical primary (58.3), kept for P-POOL"
+ },
+ "rc1": {
+  "file": "RC1_robotcali.20261005-105808.json",
+  "note": "P-D 10 seeds; ABB range-only"
+ },
+ "rc1_5seed": {
+  "file": "RC1_robotcali.20261004-145346.json",
+  "note": "5-seed ABB run quoted in Sec. 7 (N=40 tie 1.93 vs 2.00; GN 1.43/1.21/1.14); Table 4 uses the 10-seed rc1"
+ },
+ "run_ext": {
+  "file": "run_ext.20260927-184838.json",
+  "note": "clean rerun 2026-09-27; B1-fixed X1/E15/FK/E17"
+ },
+ "run_main": {
+  "file": "run_main.20260927-165803.json",
+  "note": "clean rerun 2026-09-27; B1-fixed E1 RPMG row in place"
+ },
+ "s1": {
+  "file": "S1_synthetic_law.20260930-124725.json",
+  "note": "synthetic controls, exact vs deformed law"
+ },
+ "s2": {
+  "file": "S2_ur5gtpn_relaxed.20260930-112700.json",
+  "note": "relaxed law on the independent UR5 dataset"
+ },
+ "s3": {
+  "file": "S3_matched_mlp.20260930-093338.json",
+  "note": "parameter-matched residual-MLP control"
+ },
+ "s8": {
+  "file": "S8_ur10_relaxed.20260930-230245.json",
+  "note": "relaxed law on UR10 (identifiability failure)"
+ },
+ "x10": {
+  "file": "X10_fk_calib_real.20261005-030254.json",
+  "note": "P-D 10 seeds, random split"
+ },
+ "x10_p48": {
+  "file": "X10_fk_calib_real.20260929-173636.json",
+  "note": "P48 5-seed replication (50-54), read by G2a/S8"
+ },
+ "x10b": {
+  "file": "X10b_poe_ls_baseline.20260928-combined.json",
+  "note": "classical trust-region LS baseline (GN) on X10 splits; read by G2a/S8"
+ },
+ "x11": {
+  "file": "X11_ur5_gtpn_sweep.20260930-002217.json",
+  "note": "UR5-GTPN const/theta edge sweep"
+ },
+ "x12": {
+  "file": "X12_chain_errlaw.20260930-045437.json",
+  "note": "chain error law, shared sources (FR3)"
+ },
+ "x12b": {
+  "file": "X12b_dense_chain.20260930-050616.json",
+  "note": "per-joint sources + chain coupling (FR3)"
+ },
+ "x13": {
+  "file": "X13_learned_node.20260930-050523.json",
+  "note": "learnable node, law relaxation (FR3)"
+ },
+ "x14": {
+  "file": "X14_fourier_law.20260930-114450.json",
+  "note": "Fourier law correction (KAN head), FR3"
+ },
+ "x16b": {
+  "file": "X16b_psi_diagnostics_twoslot.20261015-164953.json",
+  "note": "two-slot psi diagnostics (X16 replication); X16b"
+ },
+ "x16iso": {
+  "file": "X16_psi_diagnostics.20261004-122214.json",
+  "note": "isolated-psi diagnostics (Fig. 3b, G.4)"
+ },
+ "x17": {
+  "file": "X17_sparse_law.20261001-004738.json",
+  "note": "sparse law correction, top-k chart atoms (FR3)"
+ },
+ "x18": {
+  "file": "X18_coning.20261005-105353.json",
+  "note": "P-CONING: floor quadrature-dominated; unconstrained psi destroys"
+ },
+ "x18b": {
+  "file": "X18b_coning_constrained.20261005-122944.json",
+  "note": "P-CON2b: constrained map removes 3.2%"
+ },
+ "x19": {
+  "file": "X19_recover.20261005-123253.json",
+  "note": "P-TAU (recovered aggregates): not gravity-shaped; cures N=20"
+ },
+ "x20": {
+  "file": "X20_fric_synth.20261005-124159.json",
+  "note": "P-FRIC-synth: sign 1.000, 98% removal"
+ },
+ "x21": {
+  "file": "X21_fric_proxy.20261005-124234.json",
+  "note": "P-FRIC-proxy: inconclusive (IPA A)"
+ },
+ "x22": {
+  "file": "X22_learned_baseline.20261013-180105.json",
+  "note": "strong tuned residual-MLP learned baseline (FR3, 5 seeds); X22"
+ },
+ "x24": {
+  "file": "X24_fr3_gate.20261013-222835.json",
+  "note": "validation-gated correction on FR3 (5 seeds); X24"
+ },
+ "x25": {
+  "file": "X25_psi_bound.20261013-202819.json",
+  "note": "psi seed-stability: rotation-bounded chart (seeds 0,1,2,8,9); X25"
+ },
+ "x25b": {
+  "file": "X25b_weight_corr.20261013-215605.json",
+  "note": "cross-seed consistency of psi (winding mechanism); X25b / P-B5"
+ },
+ "x26": {
+  "file": "X26_fullbound.20261013-231249.json",
+  "note": "bound all psi components + decomposition (seeds 8,9; seed 0 from intermediate log); X26"
+ },
+ "x26a": {
+  "file": "X26b_lambda.20261014-010756.json",
+  "note": "L2 (weight-decay) sweep on the psi head, first run; X26a (script X26b_lambda)"
+ },
+ "x26a2": {
+  "file": "X26b_lambda.20261014-015623.json",
+  "note": "L2 (weight-decay) sweep on the psi head, second run; X26a (script X26b_lambda)"
+ },
+ "x26c": {
+  "file": "X26c_fr3_lambda.20261014-080726.json",
+  "note": "L2 weight-decay lambda*(N) on FR3 (capacity anchor); X26c / L-4"
+ },
+ "x32": {
+  "file": "X32_kernel.20261014-052839.json",
+  "note": "local (RBF kernel) psi head vs global linear (Kinova, 5 seeds); X32"
+ },
+ "x32_5": {
+  "file": "X32_kernel.20261014-071101.json",
+  "note": "kernel + L2 control (Kinova); X32-5"
+ },
+ "x33": {
+  "file": "X33_fr3_twoslot.20261014-125821.json",
+  "note": "two-slot psi head (global trend + local kernel), joint/sequential (FR3, 5 seeds); X33"
+ },
+ "x34": {
+  "file": "X34_fr3_kernel.20261014-090327.json",
+  "note": "local kernel psi head on the main FR3 result (5 seeds); X34 / P-FRK"
+ },
+ "x35": {
+  "file": "X35_recount_fr3.20261014-172807.json",
+  "note": "recount FR3 relaxed-psi under the final two-slot head (5 seeds); X35 / R-1 (feeds Figure 4a)"
+ },
+ "x36a": {
+  "file": "X36_recount_socket.20261014-224636.json",
+  "note": "probe A: socket two-slot with dose 0 (kuka seeds 0-3); H1"
+ },
+ "x36c": {
+  "file": "X36_recount_socket.20261014-224643.json",
+  "note": "probe C: slot-off (koff/goff) with table dose (kuka seeds 0-3)"
+ },
+ "x36e": {
+  "file": "X36_recount_socket.20261015-025716.json",
+  "note": "probe E: socket two-slot sequential-on-residual (panda/kuka)"
+ },
+ "x36seq": {
+  "file": "X36_recount_socket.20261015-095402.json",
+  "note": "Table 4 seq grid: two-slot sequential (10/5/10, dose 0) + kernel"
+ },
+ "x37": {
+  "file": "X37_broad_edge_capacity.20261015-161221.json",
+  "note": "capacity lever on the dense IMU edge (wd does not cure the outlier seed); X37 / P-D"
+ },
+ "x38": {
+  "file": "X38_perjoint_socket.20261016-070850.json",
+  "note": "per-joint-screw base socket: dense + isolated two-slot (sequential, dose 0), 10/5 seeds; socket table"
+ },
+ "x38b": {
+  "file": "X38b_kernel_socket.20261016-130839.json",
+  "note": "per-joint kernel head, Kinova (isolated)"
+ },
+ "x38c": {
+  "file": "X38c_screw_heads.20261016-163304.json",
+  "note": "per-joint global/kernel heads + dense reference, all platforms; socket table"
+ },
+ "x42": {
+  "file": "X42_optimizer_matched.20261016-233501.json",
+  "note": "FR3 classical const-screw vs exact, optimizer-matched (1e-12)"
+ },
+ "x43": {
+  "file": "X43_abb_lm.20261017-131604.json",
+  "note": "ABB psi on LM (10 seeds); unstable across runs, not used as evidence"
+ },
+ "x44": {
+  "file": "X44_fk_matched.20261017-032821.json",
+  "note": "x10 matched: const-screw Adam vs LBFGS (FR3/UR10)"
+ },
+ "x44_ur5": {
+  "file": "X44_fk_matched.20261017-075231.json",
+  "note": "x10 matched UR5 rerun (GN position-only)"
+ },
+ "x45": {
+  "file": "X45_gyro_matched.20261017-061353.json",
+  "note": "gyro matched: learned vs LM vs Adam"
+ },
+ "x46": {
+  "file": "X46_convergence.20261018-122350.json",
+  "note": "convergence checkpoint grid 10-4000 (Figure 4); X46 A1"
+ },
+ "x46a": {
+  "file": "X46_convergence.20261017-194757.json",
+  "note": "convergence A1(a) 4000-schedule; X46 A1"
+ },
+ "x46b": {
+  "file": "X46_convergence.20261017-221537.json",
+  "note": "convergence A1(b) 8000-epoch; X46 A1"
+ },
+ "x46b2": {
+  "file": "X46_convergence.20261018-062330.json",
+  "note": "convergence B1/B2 controls; X46 B"
+ },
+ "x47": {
+  "file": "X47_socket_joint_vs_seq.20261018-082744.json",
+  "note": "socket joint vs sequential two-slot, matched seeds; X47"
+ },
+ "x5": {
+  "file": "x5.20260925-112736.json",
+  "note": "trial split"
+ },
+ "x52": {
+  "file": "X52_reg_sweep.20261018-040715.json",
+  "note": "regularization/lr sweep at startup; X52"
+ },
+ "x53sock": {
+  "file": "X53_socket_convergence.20261018-130231.json",
+  "note": "socket convergence grid on FR3 unit/Kinova; X53"
+ },
+ "x54": {
+  "file": "X54_pole_check.20261019-143232.json",
+  "note": "pole/bound/lr diagnostics (output not a pole; operand chart crossing); X54"
+ },
+ "x55": {
+  "file": "X55_qfeat_fix.20261019-142709.json",
+  "note": "X53-fix: quaternion pair features (halves the peak, final worse); X55"
+ },
+ "x56": {
+  "file": "X56_kgrid.20261019-142706.json",
+  "note": "X53-kgrid: bw x k grid on q14; X56"
+ },
+ "x57": {
+  "file": "X57_cells.20261019-141137.json",
+  "note": "remaining cells: global-only q14, k=n, canonicalization; X57"
+ },
+ "x58": {
+  "file": "X58_swa.20261019-141547.json",
+  "note": "SWA of the last 20 epochs (refuted); X58"
+ },
+ "x59": {
+  "file": "X59_ema.20261019-143719.json",
+  "note": "EMA over all training (trajectory spikes removed); X59"
+ },
+ "x6": {
+  "file": "x6.20260925-141943.json",
+  "note": "per-trial bias + classical LM"
+ },
+ "x60": {
+  "file": "X60_geo.20261019-141855.json",
+  "note": "X53-geo: group-metric kernel (geodesic/chordal); X60"
+ },
+ "x61": {
+  "file": "X61_confirm.20261018-213616.json",
+  "note": "X61 confirm: 3 configs x seeds 1-3, raw+EMA"
+ },
+ "x61b": {
+  "file": "X61_confirm_PT1b.20261018-220843.json",
+  "note": "X61 P-T1b: seed 6 continuation"
+ },
+ "x6b": {
+  "file": "X6b_tinygc_style.20261004-153004.json",
+  "note": "TinyGC-style 27p competitor, LM parity (TOST)"
+ },
+ "x7": {
+  "file": "x7.20260927-202711.json",
+  "note": "clean rerun 2026-09-27; matches 20260925-150042 bit-for-bit"
+ },
+ "x7bench": {
+  "file": "X7_bench_main.20260929-225333.json",
+  "note": "X7 bench curves for Figure 3 (fig13)"
+ },
+ "x7gn": {
+  "file": "X7_gn_ls.20260930-011519.json",
+  "note": "GN baseline per-seed used by X42/X10b; X7_gn_ls"
+ },
+ "x7vqf_disturbed": {
+  "file": "X7_vqf_reference.20261004-152022.json"
+ },
+ "x7vqf_undisturbed": {
+  "file": "X7_vqf_reference.20261004-152207.json"
+ },
+ "x8": {
+  "file": "x8.20260925-120423.json"
+ },
+ "x8t": {
+  "file": "x8t.20260925-121643.json"
+ },
+ "x9": {
+  "file": "x9.20260925-131119.json"
+ }
+}

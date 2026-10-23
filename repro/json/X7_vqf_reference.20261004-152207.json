@@ -1,0 +1,84 @@
+{
+  "X7:undisturbed:a-short:VQF6D": {
+    "mean": 0.34979203655150254,
+    "std": 0.4701088224962698,
+    "n": 2000
+  },
+  "X7:undisturbed:a-short:Strapdown(bias)": {
+    "mean": 0.7537534587673025,
+    "std": 1.1511010634254402,
+    "n": 2000
+  },
+  "X7:undisturbed:a-short:paired:VQF_vs_Strapdown": {
+    "diff": -0.40396142221579995,
+    "t": -25.86401763010961,
+    "p": 1.7759792908969988e-127
+  },
+  "X7:undisturbed:b2-035s:VQF6D": {
+    "mean": 0.5436227134811833,
+    "std": 0.6106189627208617,
+    "n": 2000
+  },
+  "X7:undisturbed:b2-035s:Strapdown(bias)": {
+    "mean": 1.1644032388533574,
+    "std": 1.5065432090225002,
+    "n": 2000
+  },
+  "X7:undisturbed:b2-035s:paired:VQF_vs_Strapdown": {
+    "diff": -0.6207805253721741,
+    "t": -30.32820658568517,
+    "p": 1.557398067082996e-166
+  },
+  "X7:undisturbed:b-1s:VQF6D": {
+    "mean": 0.5957433895048253,
+    "std": 0.620858115647133,
+    "n": 2000
+  },
+  "X7:undisturbed:b-1s:Strapdown(bias)": {
+    "mean": 1.2259003345626416,
+    "std": 1.5051761047861427,
+    "n": 2000
+  },
+  "X7:undisturbed:b-1s:paired:VQF_vs_Strapdown": {
+    "diff": -0.6301569450578163,
+    "t": -30.69650626704422,
+    "p": 7.230188781503917e-170
+  },
+  "X7:undisturbed:c-5s:VQF6D": {
+    "mean": 0.7310806894380261,
+    "std": 0.7069140290024657,
+    "n": 1650
+  },
+  "X7:undisturbed:c-5s:Strapdown(bias)": {
+    "mean": 1.4839832024479362,
+    "std": 1.664333346069878,
+    "n": 1650
+  },
+  "X7:undisturbed:c-5s:paired:VQF_vs_Strapdown": {
+    "diff": -0.7529025130099102,
+    "t": -29.456483394388826,
+    "p": 1.3775813533515314e-153
+  },
+  "_meta": {
+    "wall_s": 95.0226218700409,
+    "groups": [
+      "undisturbed"
+    ],
+    "filter": "vqf.offlineVQF quat6D, mag=NaN",
+    "script": "X7_vqf_reference.py",
+    "git_head": "a4c8b80f3aaf04ef94999d7b449fa7be3ada4f34",
+    "git_branch": "main",
+    "date": "2026-10-04 15:22:07",
+    "quick": false,
+    "seeds": null,
+    "seed_start": null,
+    "epochs": null,
+    "torch": "2.4.1+cu121",
+    "args": {
+      "data_dir": "../broad/data_hdf5",
+      "groups": "undisturbed",
+      "blocks": "a-short,b2-035s,b-1s,c-5s",
+      "quick": false
+    }
+  }
+}

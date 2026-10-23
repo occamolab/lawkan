@@ -1,0 +1,114 @@
+{
+  "X7:disturbed:a-short:VQF6D": {
+    "mean": 0.20141793077907869,
+    "std": 0.14274335424926368,
+    "n": 2000
+  },
+  "X7:disturbed:a-short:Strapdown(bias)": {
+    "mean": 0.39393866307639114,
+    "std": 0.25670894064643646,
+    "n": 2000
+  },
+  "X7:disturbed:a-short:paired:VQF_vs_Strapdown": {
+    "diff": -0.19252073229731245,
+    "t": -56.67822957484327,
+    "p": 0.0
+  },
+  "X7:disturbed:b2-035s:VQF6D": {
+    "mean": 0.3780208630693711,
+    "std": 0.24022295554610412,
+    "n": 2000
+  },
+  "X7:disturbed:b2-035s:Strapdown(bias)": {
+    "mean": 0.7633510213383016,
+    "std": 0.5192833670745882,
+    "n": 2000
+  },
+  "X7:disturbed:b2-035s:paired:VQF_vs_Strapdown": {
+    "diff": -0.38533015826893047,
+    "t": -53.79423269186748,
+    "p": 0.0
+  },
+  "X7:disturbed:b-1s:VQF6D": {
+    "mean": 0.5361254838868527,
+    "std": 0.34002393605310527,
+    "n": 2000
+  },
+  "X7:disturbed:b-1s:Strapdown(bias)": {
+    "mean": 1.1480934122321476,
+    "std": 0.7675176766471644,
+    "n": 2000
+  },
+  "X7:disturbed:b-1s:paired:VQF_vs_Strapdown": {
+    "diff": -0.6119679283452949,
+    "t": -58.047362388749235,
+    "p": 0.0
+  },
+  "X7:disturbed:c-5s:VQF6D": {
+    "mean": 0.6803552109740281,
+    "std": 0.36289353352629233,
+    "n": 1233
+  },
+  "X7:disturbed:c-5s:Strapdown(bias)": {
+    "mean": 1.1910401126827208,
+    "std": 0.7005691010975107,
+    "n": 1233
+  },
+  "X7:disturbed:c-5s:paired:VQF_vs_Strapdown": {
+    "diff": -0.5106849017086927,
+    "t": -40.44931785253572,
+    "p": 2.5814985850991696e-228
+  },
+  "X7:disturbed:d-short:VQF6D": {
+    "mean": 0.20141793077907869,
+    "std": 0.14274335424926368,
+    "n": 2000
+  },
+  "X7:disturbed:d-short:Strapdown(bias)": {
+    "mean": 0.39393866307639114,
+    "std": 0.25670894064643646,
+    "n": 2000
+  },
+  "X7:disturbed:d-short:paired:VQF_vs_Strapdown": {
+    "diff": -0.19252073229731245,
+    "t": -56.67822957484327,
+    "p": 0.0
+  },
+  "X7:disturbed:d-035s:VQF6D": {
+    "mean": 0.3679418473792554,
+    "std": 0.23152909550479775,
+    "n": 1759
+  },
+  "X7:disturbed:d-035s:Strapdown(bias)": {
+    "mean": 0.7506152311607412,
+    "std": 0.5053637862677673,
+    "n": 1759
+  },
+  "X7:disturbed:d-035s:paired:VQF_vs_Strapdown": {
+    "diff": -0.38267338378148585,
+    "t": -50.83989892005901,
+    "p": 0.0
+  },
+  "_meta": {
+    "wall_s": 102.30193042755127,
+    "groups": [
+      "disturbed"
+    ],
+    "filter": "vqf.offlineVQF quat6D, mag=NaN",
+    "script": "X7_vqf_reference.py",
+    "git_head": "a4c8b80f3aaf04ef94999d7b449fa7be3ada4f34",
+    "git_branch": "main",
+    "date": "2026-10-04 15:20:22",
+    "quick": false,
+    "seeds": null,
+    "seed_start": null,
+    "epochs": null,
+    "torch": "2.4.1+cu121",
+    "args": {
+      "data_dir": "../broad/data_hdf5",
+      "groups": "disturbed",
+      "blocks": "a-short,b2-035s,b-1s,c-5s,d-short,d-035s",
+      "quick": false
+    }
+  }
+}

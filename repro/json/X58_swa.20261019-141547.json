@@ -1,0 +1,26 @@
+{
+  "cells": {
+    "k=20": {
+      "final": 1.2851534447156967
+    },
+    "k=n": {
+      "final": 1.6038611554541116
+    }
+  },
+  "_meta": {
+    "script": "X58_swa.py",
+    "git_head": "b539cf1a3c937bcfee53bde6dd688652bc46f1d8",
+    "git_branch": "main",
+    "date": "2026-10-19 14:15:47",
+    "quick": false,
+    "seeds": 1,
+    "seed_start": null,
+    "epochs": 200,
+    "torch": "2.4.1+cu121",
+    "args": {
+      "seed": 3,
+      "N": 60,
+      "epochs": 200
+    }
+  }
+}

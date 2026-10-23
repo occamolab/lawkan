@@ -1,0 +1,26 @@
+# Python cache
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Local data / logs produced by the scripts
+calib_data.pickle
+*.log
+!repro/provenance/*.log
+
+# Local datasets: only the redistributable MIT/auto-downloaded files are tracked
+data/*
+!data/calib_data.pickle
+!data/FR3_LICENSE
+!data/ipa/
+!data/ipa/**
+!data/pauljac/
+!data/pauljac/**
+
+# Smoke/quick dumps and partial checkpoints are never committed
+repro/json/*-smoke.json
+*.partial.pt
+/newdata
+
+# runtime progress files
+repro/json/*_progress.json

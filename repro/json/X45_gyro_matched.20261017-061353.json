@@ -1,0 +1,68 @@
+{
+  "X45:a-short:raw": 0.593489304577796,
+  "X45:a-short:bias": 0.5925476385424872,
+  "X45:a-short:classical_lm": 0.5883587824911263,
+  "X45:a-short:learned_lm": 0.5883587824911263,
+  "X45:a-short:learned_adam_mean": 0.5883987210803096,
+  "X45:a-short:learned_adam_per_seed": [
+    0.5883987210803096,
+    0.5883987210803096,
+    0.5883987210803096
+  ],
+  "X45:a-short:adam_vs_lm": {
+    "diff": 3.9938589183274864e-05,
+    "p": 0.0
+  },
+  "X45:b-035s:raw": 1.1605497453126028,
+  "X45:b-035s:bias": 1.1441992905786866,
+  "X45:b-035s:classical_lm": 1.1000245193994174,
+  "X45:b-035s:learned_lm": 1.1000245193994174,
+  "X45:b-035s:learned_adam_mean": 1.1000118327309065,
+  "X45:b-035s:learned_adam_per_seed": [
+    1.1000118327309065,
+    1.1000118327309065,
+    1.1000118327309065
+  ],
+  "X45:b-035s:adam_vs_lm": {
+    "diff": -1.268666851084177e-05,
+    "p": 0.0
+  },
+  "X45:c-1s:raw": 1.4525273466690882,
+  "X45:c-1s:bias": 1.374315532137429,
+  "X45:c-1s:classical_lm": 1.3623494998542398,
+  "X45:c-1s:learned_lm": 1.3623494998542398,
+  "X45:c-1s:learned_adam_mean": 1.3652594859225011,
+  "X45:c-1s:learned_adam_per_seed": [
+    1.365259485922501,
+    1.365259485922501,
+    1.365259485922501
+  ],
+  "X45:c-1s:adam_vs_lm": {
+    "diff": 0.0029099860682613166,
+    "p": 2.9111771629706595e-27
+  },
+  "_meta_local": {
+    "wall_s": 18697.43287920952
+  },
+  "_meta": {
+    "script": "X45_gyro_matched.py",
+    "git_head": "e18dbb3c65545d587a684c2a33fc4e16c33e2df2",
+    "git_branch": "main",
+    "date": "2026-10-17 06:13:53",
+    "quick": false,
+    "seeds": 3,
+    "seed_start": null,
+    "epochs": null,
+    "torch": "2.4.1+cu121",
+    "args": {
+      "data_dir": "${BROAD_ROOT}/data_hdf5",
+      "groups": "undisturbed",
+      "seeds": 3,
+      "epochs": 2000,
+      "lr": 0.01,
+      "quick": false
+    },
+    "note": "P-X45: learned (M,b) and classical (M,b) under the SAME LM",
+    "loss": "geodesic (shared)"
+  }
+}

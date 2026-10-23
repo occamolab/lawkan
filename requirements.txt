@@ -1,0 +1,17 @@
+# Core
+numpy
+scipy
+torch
+pandas
+h5py
+
+# Figures
+matplotlib
+scienceplots
+
+# Real-data probes (X7 / X10 / MK1 / ABB xlsx and the VQF reference)
+openpyxl
+roboticstoolbox-python
+robotkinecal
+vqf
+rtb-data==1.1.0

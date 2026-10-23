@@ -1,0 +1,69 @@
+{
+  "POOL:abb": {
+    "N40": {
+      "diff": -0.12491660595226084,
+      "p": 0.03851227609889132
+    },
+    "N80": {
+      "diff": -0.1616812466514177,
+      "p": 0.008913680355832258
+    },
+    "N160": {
+      "diff": -0.277314771611626,
+      "p": 3.4018657903052517e-07
+    },
+    "N320": {
+      "diff": -0.26894679286721024,
+      "p": 2.2916918881423065e-09
+    }
+  },
+  "POOL:kuka14": {
+    "diff": -0.36222406011145913,
+    "p": 2.4556769633143554e-11
+  },
+  "POOL:fisher": {
+    "chi2": 58.30040322932872,
+    "p": 6.5996136633865555e-12,
+    "met": true
+  },
+  "POOL:kinova_ext": {
+    "diff": -0.19812181949837138,
+    "p": 0.26124843548183846,
+    "dense_diff": 0.2914405146252135,
+    "dense_p": 0.03509233803019723,
+    "gate": false
+  },
+  "POOL:views_replication": {
+    "kuka14_left_back": {
+      "diff": -0.3804305975726808,
+      "p": 0.00024412447409033987,
+      "wins": true
+    },
+    "kuka14_raised_left": {
+      "diff": -0.36580116337659246,
+      "p": 0.00013201149795954555,
+      "wins": true
+    }
+  },
+  "POOL:extended": {
+    "claimed": false,
+    "chi2": null,
+    "p": null,
+    "composition": [
+      "abb_N80",
+      "kuka14_front",
+      "kinova_front"
+    ]
+  },
+  "_meta": {
+    "script": "POOL_verdict.py",
+    "git_head": "cbdd293ab7bcfda88b3da27a0255a6f8eec1d80a",
+    "git_branch": "main",
+    "date": "2026-10-05 12:30:34",
+    "quick": false,
+    "seeds": null,
+    "seed_start": null,
+    "epochs": null,
+    "torch": "2.4.1+cu121"
+  }
+}

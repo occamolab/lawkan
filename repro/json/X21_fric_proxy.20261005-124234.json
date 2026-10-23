@@ -1,0 +1,48 @@
+{
+  "X21:rows": {
+    "total": 11911,
+    "evaluated": 1998
+  },
+  "X21:heldout_rms_mm": 0.4396312493245526,
+  "X21:joint_rhos": [
+    0.030154795371691537,
+    -0.023487543924798602,
+    0.0021964568228168896,
+    0.008093954595700167,
+    -0.02223766666838426,
+    -0.04751264951210904
+  ],
+  "X21:positive_signs": 3,
+  "X21:mean_rho": -0.008798775552513885,
+  "X21:perm_p": 0.918,
+  "X21:speed_spearman": {
+    "rho": 0.0005568527774047157,
+    "p": 0.9801545216451326
+  },
+  "X21:verdict": "inconclusive",
+  "X21:protocol": {
+    "train": 4000,
+    "test": 2000,
+    "steps_gap": 1500,
+    "steps_sc": 3000
+  },
+  "_meta": {
+    "script": "X21_fric_proxy.py",
+    "git_head": "e8025ab157b897f52f296b1f22c9e84793a32ce0",
+    "git_branch": "main",
+    "date": "2026-10-05 12:42:34",
+    "quick": false,
+    "seeds": null,
+    "seed_start": null,
+    "epochs": null,
+    "torch": "2.4.1+cu121",
+    "args": {
+      "data": "data",
+      "train": 4000,
+      "test": 2000,
+      "steps_gap": 1500,
+      "steps_sc": 3000,
+      "quick": false
+    }
+  }
+}

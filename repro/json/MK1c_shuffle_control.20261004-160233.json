@@ -1,0 +1,40 @@
+{
+  "MK1c:kuka14:edge_b:test_rms_mm": 63.67661535819566,
+  "MK1c:kuka14:edge_b:train_rms_mm": 62.02490705555136,
+  "MK1c:kuka14:iso:test_rms_mm": 60.4697215175378,
+  "MK1c:kuka14:iso:train_rms_mm": 21.70467828150087,
+  "MK1c:kuka14:iso:psi_norm": 82.58418100288056,
+  "MK1c:kuka14:gain_te": 1.0530330512557062,
+  "MK1c:panda_1:edge_b:test_rms_mm": 99.39801794477565,
+  "MK1c:panda_1:edge_b:train_rms_mm": 66.07400650354715,
+  "MK1c:panda_1:iso:test_rms_mm": 59.28359562707894,
+  "MK1c:panda_1:iso:train_rms_mm": 22.335470419102727,
+  "MK1c:panda_1:iso:psi_norm": 71.96023094665699,
+  "MK1c:panda_1:gain_te": 1.6766529913272274,
+  "MK1c:protocol": {
+    "shuffle": "rng(2000) permutation of concatenated sockets, equal halves",
+    "split": "70/30 per pseudo-socket, rng(1000)",
+    "seeds": 1,
+    "steps": 3000,
+    "lr": 0.001,
+    "lam": 100.0
+  },
+  "_meta": {
+    "script": "MK1c_shuffle_control.py",
+    "git_head": "397e0ec5d8ac1cf9aeb8d6acb7094bb2ec4995c0",
+    "git_branch": "main",
+    "date": "2026-10-04 16:02:33",
+    "quick": false,
+    "seeds": null,
+    "seed_start": null,
+    "epochs": 3000,
+    "torch": "2.4.1+cu121",
+    "args": {
+      "platforms": "kuka14,panda_1",
+      "steps": 3000,
+      "lr": 0.001,
+      "lam": 100.0,
+      "quick": false
+    }
+  }
+}

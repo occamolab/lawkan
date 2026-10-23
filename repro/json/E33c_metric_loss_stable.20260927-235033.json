@@ -1,0 +1,95 @@
+{
+  "E33c:QuatKAN K=1, stable metric": {
+    "mean": 2.793254852294922,
+    "std": 0.0164126960119719,
+    "per_seed": [
+      2.796962022781372,
+      2.8174450397491455,
+      2.8009800910949707,
+      2.780630588531494,
+      2.770256519317627
+    ],
+    "lr": 0.01,
+    "held_out_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "E33c:QuatKAN K=3, stable metric": {
+    "mean": 3.1120513916015624,
+    "std": 0.050916188375074105,
+    "per_seed": [
+      3.1806163787841797,
+      3.1663780212402344,
+      3.079763889312744,
+      3.057729482650757,
+      3.0757691860198975
+    ],
+    "lr": 0.01,
+    "held_out_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "E33c:MLP-Quat h=32, stable metric": {
+    "mean": 3.607872200012207,
+    "std": 0.12645738366989162,
+    "per_seed": [
+      3.8352696895599365,
+      3.6358561515808105,
+      3.468087673187256,
+      3.5251379013061523,
+      3.57500958442688
+    ],
+    "lr": 0.003,
+    "held_out_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "E33c:ttest:K1 vs K3": {
+    "text": "t=-15.35, df=4, p=1.05e-04"
+  },
+  "E33c:ttest:K1 vs MLP": {
+    "text": "t=-13.14, df=4, p=1.94e-04"
+  },
+  "E33c:P55.1": {
+    "text": "FAIL: K=1 stable metric 2.7933 <= 2.40 (1-cos 2.784)"
+  },
+  "E33c:P55.2": {
+    "text": "PASS: K=1 2.7933 <= K=3 3.1121 and <= MLP 3.6079 (K1-vs-MLP p=1.94e-04)"
+  },
+  "E33c:P55.3": {
+    "text": "PASS: stable-metric K=1 2.7933 >= 2.70 -> the gap to the metric floor is a model/data property, not the loss"
+  },
+  "E33c:wall_s": 263.1024432182312,
+  "_meta": {
+    "script": "E33c_metric_loss_stable.py",
+    "git_head": "1cc783dbd271202c03873205ef11a58ce8425454",
+    "git_branch": "main",
+    "date": "2026-09-27 23:50:33",
+    "quick": false,
+    "seeds": 5,
+    "seed_start": 0,
+    "epochs": 3000,
+    "torch": "2.4.1+cu121",
+    "args": {
+      "quick": false,
+      "epochs": 3000,
+      "seeds": 5,
+      "seed_start": 0
+    },
+    "floor": 1.9020336866378784,
+    "one_cos_ref": 2.7836864948272706,
+    "loss": "2*asin(||v_pred-v_true||/2)"
+  }
+}

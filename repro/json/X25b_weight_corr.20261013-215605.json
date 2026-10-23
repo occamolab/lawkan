@@ -1,0 +1,58 @@
+{
+  "X25b:base:cross_seed_corr": {
+    "mean": 0.2952320035242522,
+    "pairs": [
+      0.44880057733712564,
+      0.2769450496313812,
+      0.1599503836042497
+    ]
+  },
+  "X25b:chart:cross_seed_corr": {
+    "mean": 0.2959861407140048,
+    "pairs": [
+      0.4478507828008528,
+      0.27957281954041413,
+      0.16053481980074744
+    ]
+  },
+  "X25b:P-B5": {
+    "corr_base": 0.2952320035242522,
+    "corr_chart": 0.2959861407140048,
+    "holds": true
+  },
+  "X25b:protocol": {
+    "platform": "kinova",
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "steps": 3000,
+    "lr": 0.001,
+    "wmax": 1.5,
+    "probes": 64,
+    "fingerprint": "psi(u_probe)"
+  },
+  "_meta_local": {
+    "wall_s": 7411.768161058426
+  },
+  "_meta": {
+    "script": "X25b_weight_corr.py",
+    "git_head": "000a4bb4a713c4641899618bf35510df904c0d0b",
+    "git_branch": "main",
+    "date": "2026-10-13 21:56:05",
+    "quick": false,
+    "seeds": 3,
+    "seed_start": null,
+    "epochs": 3000,
+    "torch": "2.4.1+cu121",
+    "args": {
+      "seed_list": "0,1,2",
+      "steps": 3000,
+      "lr": 0.001,
+      "wmax": 1.5,
+      "probes": 64,
+      "quick": false
+    }
+  }
+}

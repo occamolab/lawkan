@@ -1,0 +1,86 @@
+{
+  "X18b:coning_left:floor_deg": 0.16683119159856802,
+  "X18b:coning_left:test_deg": 0.16156847322136317,
+  "X18b:coning_left:gain_pct": 3.1545170461097505,
+  "X18b:coning_left:A": [
+    [
+      -13.119649910675124,
+      14.83656528199343,
+      -0.020036238747110746
+    ],
+    [
+      -14.83940758002491,
+      -6.410589190219453,
+      0.06162058265859251
+    ],
+    [
+      -8.638666435410537e-08,
+      -3.0075525689321006e-08,
+      -0.06656502102314667
+    ]
+  ],
+  "X18b:coning_mid:floor_deg": 0.005124690240562662,
+  "X18b:coning_mid:test_deg": 0.005124690240562664,
+  "X18b:coning_mid:gain_pct": -4.440892098500626e-14,
+  "X18b:coning_mid:A": [
+    [
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0
+    ]
+  ],
+  "X18b:nonconing:floor_deg": 0.005124690240562662,
+  "X18b:nonconing:test_deg": 0.005124690240562664,
+  "X18b:nonconing:gain_pct": -4.440892098500626e-14,
+  "X18b:nonconing:A": [
+    [
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0
+    ]
+  ],
+  "X18b:protocol": {
+    "W": 64,
+    "windows": 3000,
+    "steps": 1500,
+    "lr": 0.01
+  },
+  "_meta": {
+    "script": "X18b_coning_constrained.py",
+    "git_head": "cbdd293ab7bcfda88b3da27a0255a6f8eec1d80a",
+    "git_branch": "main",
+    "date": "2026-10-05 12:29:44",
+    "quick": false,
+    "seeds": null,
+    "seed_start": null,
+    "epochs": null,
+    "torch": "2.4.1+cu121",
+    "args": {
+      "windows": 3000,
+      "W": 64,
+      "steps": 1500,
+      "lr": 0.01,
+      "quick": false
+    }
+  }
+}

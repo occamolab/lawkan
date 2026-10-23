@@ -1,0 +1,93 @@
+{
+  "G3:fr3:joint": {
+    "psi_norm_mean": 0.021491093600351324,
+    "psi_norm_max": 0.03347383418601541,
+    "edge_params": 54,
+    "edge_rank": 54,
+    "absorbable_share": 0.9763196509220146,
+    "orthogonal_share": 0.02368034907798544,
+    "n_configs": 80,
+    "pos_test_on": 1.3786448639147242,
+    "pos_test_off": 10.236265080235007
+  },
+  "G3:fr3:isolated": {
+    "psi_norm_mean": 0.002719750749279408,
+    "psi_norm_max": 0.008005903494409487,
+    "edge_params": 54,
+    "edge_rank": 54,
+    "absorbable_share": 0.12419921953727076,
+    "orthogonal_share": 0.8758007804627292,
+    "n_configs": 80,
+    "pos_test_on": 1.3000998699630815,
+    "pos_test_off": 1.3885849968755515
+  },
+  "G3:ur10:joint": {
+    "psi_norm_mean": 0.027609684898587606,
+    "psi_norm_max": 0.03416475371525911,
+    "edge_params": 48,
+    "edge_rank": 48,
+    "absorbable_share": 0.9911640439706527,
+    "orthogonal_share": 0.00883595602934728,
+    "n_configs": 80,
+    "pos_test_on": 0.7492223324296301,
+    "pos_test_off": 21.277660499775124
+  },
+  "G3:ur10:isolated": {
+    "psi_norm_mean": 0.0003277960962777532,
+    "psi_norm_max": 0.0006770413808903985,
+    "edge_params": 48,
+    "edge_rank": 48,
+    "absorbable_share": 0.15124420541040562,
+    "orthogonal_share": 0.8487557945895944,
+    "n_configs": 80,
+    "pos_test_on": 0.4133394592212819,
+    "pos_test_off": 0.41716868376004135
+  },
+  "G3:ur5:joint": {
+    "psi_norm_mean": 0.004599818492369362,
+    "psi_norm_max": 0.008945557530466759,
+    "edge_params": 48,
+    "edge_rank": 48,
+    "absorbable_share": 0.8245361760061987,
+    "orthogonal_share": 0.17546382399380134,
+    "n_configs": 80,
+    "pos_test_on": 0.4043957300293148,
+    "pos_test_off": 2.1789307863239458
+  },
+  "G3:ur5:isolated": {
+    "psi_norm_mean": 0.00499234922450306,
+    "psi_norm_max": 0.00740104498284842,
+    "edge_params": 48,
+    "edge_rank": 48,
+    "absorbable_share": 0.9581479111298642,
+    "orthogonal_share": 0.041852088870135806,
+    "n_configs": 80,
+    "pos_test_on": 0.4022340942224303,
+    "pos_test_off": 0.41001541598291774
+  },
+  "G3:_meta_local": {
+    "wall_s": 791.1528222560883
+  },
+  "_meta": {
+    "script": "G3_orthogonality.py",
+    "git_head": "dc813e8949ce88896437cdd0cd25b806412eb55e",
+    "git_branch": "main",
+    "date": "2026-10-01 19:14:48",
+    "quick": false,
+    "seeds": 1,
+    "seed_start": null,
+    "epochs": [
+      4000,
+      2000
+    ],
+    "torch": "2.4.1+cu121",
+    "args": {
+      "platforms": "fr3,ur5,ur10",
+      "data": "../calib_data.pickle",
+      "steps": 2000,
+      "epochs": 4000,
+      "lr": 0.005,
+      "quick": false
+    }
+  }
+}

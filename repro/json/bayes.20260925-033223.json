@@ -1,0 +1,14 @@
+{
+  "E10:n2 (sanity, expect ~2.697)": 2.697,
+  "E10:n3 (sanity, expect ~3.057)": 3.057,
+  "E10b:P16b random hidden, M=256": 37.796,
+  "E10b:P16b random hidden, M=2048": 37.711,
+  "_meta": {
+    "source": "repro/run_all.sh (extract_json.py)",
+    "date": "2026-09-25T03:32:23+03:00",
+    "git_head": "b0b0a81dd6898c732e9ee06c6361a39bb585f447",
+    "git_head_short": "b0b0a81-dirty",
+    "env_log": "repro/logs/env.20260925-033223.txt",
+    "note": null
+  }
+}
