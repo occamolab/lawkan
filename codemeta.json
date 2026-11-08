@@ -26,8 +26,16 @@
   ],
   "author": [
     {
-      "@type": "Organization",
-      "name": "Anonymous Authors"
+      "@type": "Person",
+      "givenName": "Anna",
+      "familyName": "Mishchenko",
+      "affiliation": "Independent researcher"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Nikolai",
+      "familyName": "Gavrilin",
+      "affiliation": "Independent researcher"
     }
   ],
   "datePublished": "2026-10-24",

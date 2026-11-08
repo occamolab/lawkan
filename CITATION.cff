@@ -1,8 +1,11 @@
 cff-version: 1.2.0
-message: "Anonymous review artifact; author and paper metadata will be added after publication."
+message: "Code and reproduction artifact for the LawKAN paper."
 title: "LawKAN: group-law layers for composition — when imposing a known law pays off (code and reproduction artifact)"
 version: 1.0.0
 date-released: 2026-10-24
 license: AGPL-3.0-or-later
 authors:
-  - name: "Anonymous Authors"
+  - family-names: Mishchenko
+    given-names: Anna
+  - family-names: Gavrilin
+    given-names: Nikolai

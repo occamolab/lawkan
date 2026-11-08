@@ -4,7 +4,10 @@
   "description": "Code and reproduction artifact for the LawKAN paper: a group-law layer for transformation composition (exact node, learned edge, zero-initialized law correction). Tested on SU(2), GL+(2,R) and SE(3); real robot-arm calibration, IMUs and a gyroscope. Includes 120 canonical blocks, 171 mechanical number checks, the span-check demo, and data/license manifests. Third-party datasets retain their own licenses (see THIRD_PARTY.md); ABB RobotCali is not redistributed.",
   "creators": [
     {
-      "name": "Anonymous Authors"
+      "name": "Mishchenko, Anna"
+    },
+    {
+      "name": "Gavrilin, Nikolai"
     }
   ],
   "license": "AGPL-3.0-or-later",
