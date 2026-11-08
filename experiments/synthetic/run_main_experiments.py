@@ -4,7 +4,7 @@
 # (formerly run_all_experiments.py, v1.0–v1.1; renamed in v1.2)
 #
 # This script is the source of every number in §4–§5 and Appendices C.1–C.16
-# of the paper (TMLR submission): the main synthetic benchmark, blocks E1–E14
+# of the paper: the main synthetic benchmark, blocks E1–E14
 # (E18 — the composition-operator ablation — lives in run_extensions.py).
 # The applied probes of §6 (IMU, FK calibration, rigid-body), an independent
 # RPMG rerun, non-Gaussian noise and Vector Neurons live in the companion

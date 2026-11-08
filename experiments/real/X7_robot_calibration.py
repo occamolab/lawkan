@@ -4,7 +4,7 @@
 X7_robot_calibration.py — Real-robot kinematic calibration benchmark
 ====================================================================
 
-Companion probe to the QuatKAN paper (TMLR submission). X5 (BROAD gyro-only
+Companion probe to the LawKAN paper. X5 (BROAD gyro-only
 dead-reckoning) established a boundary: when the analytic group law IS the
 right computation, learned models have nothing to add. X7 tests the opposite
 regime on real data: forward-kinematics (FK) calibration of a real 7-DOF

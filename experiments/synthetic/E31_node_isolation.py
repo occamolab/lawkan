@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: AGPL-3.0-or-later
 # ============================================================
-# LawKAN - E31: node vs edge isolation (Tier 1 of the three TMLR reviews)
+# LawKAN - E31: node vs edge isolation (Tier 1 control)
 #
 # Fix the NODE (exp per group + Hamilton product in the data's composition
 # order, probe readout) and vary only the EDGE; add controls without the node.
