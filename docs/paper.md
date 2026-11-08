@@ -33,5 +33,5 @@ parameter efficiency · tiny models.
 - Headline numbers per probe: [`results.md`](results.md)
 - Questions and scope: [`faq.md`](faq.md); terms: [`glossary.md`](glossary.md)
 - Script-by-script map to the paper: [`blocks.md`](blocks.md)
-- Registered-predictions log (prediction → outcome → verdict): [`predictions.md`](predictions.md)
+- Predictions log (prediction → outcome → verdict): [`predictions.md`](predictions.md)
 - Reproduction guide and data: [`../REPRODUCE.md`](../REPRODUCE.md)

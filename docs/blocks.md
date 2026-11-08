@@ -14,7 +14,7 @@ dumps): the core battery lives in
 document their own protocol inline. Experiment scripts end with a machine-readable **SUMMARY-JSON** dump,
 from which the paper tables are generated mechanically; helper and figure scripts read those dumps.
 
-The per-entry **registered-predictions log** (prediction → outcome → verdict, refuted entries kept) is
+The per-entry **predictions log** (prediction → outcome → verdict, refuted entries kept) is
 [`predictions.md`](predictions.md).
 
 | File | Contents | Paper |

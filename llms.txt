@@ -40,7 +40,7 @@
   `repro/stats/check_derived.py`, and the portable CPU run by
   `repro/check_cpu_reference.py`; registry-driven tiers via `repro/run_registry.py`
   (`smoke`, `headline`, `full`; CPU reference default, GPU optional).
-- Registered predictions: 130 verdicts (59 battery + 30 validity + 30 revision + 11 branch);
+- Pre-specified predictions: 130 verdicts (59 battery + 30 validity + 30 revision + 11 branch);
   the full per-entry log is `docs/predictions.md`.
 - Version: v1.0.0. Citation metadata: `CITATION.cff` (paper reference added at publication).
 
@@ -52,7 +52,7 @@
 - [docs/glossary.md](docs/glossary.md): terms (chart, edge, node, increment, analytic support, ψ)
 - [docs/paper.md](docs/paper.md): paper title and abstract
 - [docs/blocks.md](docs/blocks.md): script-by-script map to the paper
-- [docs/predictions.md](docs/predictions.md): registered-predictions log (prediction → outcome → verdict)
+- [docs/predictions.md](docs/predictions.md): predictions log (prediction → outcome → verdict)
 - [REPRODUCE.md](REPRODUCE.md): data prerequisites and paper-item → command map
 - [THIRD_PARTY.md](THIRD_PARTY.md): third-party data and libraries
 

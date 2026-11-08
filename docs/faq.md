@@ -63,10 +63,9 @@ minutes and checks that every headline block starts and dumps. GPU (`--mode gpu`
 and faster, but the portable reference numbers were recorded on CPU. Full-tier runs, including
 the pole-fix branch, take longer.
 
-## What is the registered-prediction protocol?
+## What is the prediction protocol?
 
-Every experiment registers its prediction before the run, and refuted predictions are kept
-and reported. The paper reports **130 verdicts** (59 main battery + 30 validity + 30 revision
+Every experiment pre-specified its prediction in the authors’ internal experiment log before the run, and refuted predictions are kept and reported. The paper reports **130 verdicts** (59 main battery + 30 validity + 30 revision
 + 11 pole-fix branch); the public log has 119 per-entry rows and the paper's Appendix K
 summarizes the 11 branch probes.
 

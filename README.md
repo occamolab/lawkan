@@ -306,7 +306,7 @@ overview is in [`docs/blocks.md`](docs/blocks.md).
 
 - [`docs/paper.md`](docs/paper.md) — the paper title and a condensed repository abstract.
 - [`docs/results.md`](docs/results.md) — headline results, each checked mechanically against the dumps.
-- [`docs/predictions.md`](docs/predictions.md) — the **full registered-predictions log**: every experiment registered a prediction before its run, refuted predictions are kept, and each row is a prediction → outcome → verdict. This is the paper's reporting protocol, counted in its appendix.
+- [`docs/predictions.md`](docs/predictions.md) — the **full predictions log**: every experiment pre-specified a prediction in the authors’ internal experiment log before its run, refuted predictions are kept, and each row is a prediction → outcome → verdict. This is the paper's reporting protocol, counted in its appendix.
 - [`docs/blocks.md`](docs/blocks.md) — the per-block script-to-paper map and direct-run commands.
 - [`docs/faq.md`](docs/faq.md), [`docs/glossary.md`](docs/glossary.md) — background and terminology.
 - [`REPRODUCE.md`](REPRODUCE.md) — data prerequisites and the paper-item → command map.
