@@ -1,6 +1,6 @@
 # LawKAN: group-law layers for composition — when imposing a known law pays off
 
-*Code and reproduction artifact: <https://anonymous.4open.science/r/lawkan-6A4A/>. The preprint
+*Code and reproduction artifact: <https://github.com/occamolab/lawkan>. The preprint
 link is added upon posting; see `CITATION.cff`. This mirrors the manuscript abstract; the
 typeset version is in the paper.*
 

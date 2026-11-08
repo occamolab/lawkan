@@ -23,7 +23,7 @@
   "related_identifiers": [
     {
       "relation": "isSupplementTo",
-      "identifier": "https://anonymous.4open.science/r/lawkan-6A4A/",
+      "identifier": "https://github.com/occamolab/lawkan",
       "scheme": "url"
     }
   ],

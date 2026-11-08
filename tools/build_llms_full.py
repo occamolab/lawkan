@@ -25,7 +25,7 @@ SECTIONS = [
 HEADER = (
     "# LawKAN — full repository digest for language models\n"
     "Generated from README.md and docs/*.md; links are relative to the repository root\n"
-    "(https://anonymous.4open.science/r/lawkan-6A4A/).\n"
+    "(https://github.com/occamolab/lawkan).\n"
 )
 
 

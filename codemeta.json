@@ -4,7 +4,7 @@
   "name": "LawKAN",
   "version": "1.0.0",
   "description": "Code and reproduction artifact for the LawKAN paper: a KAN-style architecture for composition under a known group law (exact node + learned edge + optional zero-initialized correction to the law). Tested on SU(2), GL+(2,R) and SE(3); real robot-arm calibration, IMUs and a gyroscope; 120 canonical blocks and 171 mechanical number checks.",
-  "codeRepository": "https://anonymous.4open.science/r/lawkan-6A4A/",
+  "codeRepository": "https://github.com/occamolab/lawkan",
   "license": "https://spdx.org/licenses/AGPL-3.0-or-later",
   "programmingLanguage": [
     "Python"
