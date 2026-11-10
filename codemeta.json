@@ -2,7 +2,7 @@
   "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
   "@type": "SoftwareSourceCode",
   "name": "LawKAN",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Code and reproduction artifact for the LawKAN paper: a KAN-style architecture for composition under a known group law (exact node + learned edge + optional zero-initialized correction to the law). Tested on SU(2), GL+(2,R) and SE(3); real robot-arm calibration, IMUs and a gyroscope; 120 canonical blocks and 171 mechanical number checks.",
   "codeRepository": "https://github.com/occamolab/lawkan",
   "citation": "https://arxiv.org/abs/2611.12567",
