@@ -14,7 +14,7 @@ This repository is the code and reproduction artifact for the LawKAN paper: the
 experiments, pinned dumps, mechanical checks, and figure generators behind its tables
 and figures.
 
-**Paper:** [arXiv:2611.12567](https://arxiv.org/abs/2611.12567) · **DOI:** [10.48550/arXiv.2611.12567](https://doi.org/10.48550/arXiv.2611.12567)
+**Paper:** [arXiv:2611.12567](https://arxiv.org/abs/2611.12567) · **DOI:** [10.48550/arXiv.2611.12567](https://doi.org/10.48550/arXiv.2611.12567) · **Website:** [occamolab.org](https://occamolab.org)
 
 **Question.** Many tasks compose rotations, poses, or other transformations. The rule for
 combining them is known in advance, and it is a non-commutative multiplication. Learned

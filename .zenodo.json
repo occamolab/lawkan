@@ -33,6 +33,11 @@
       "relation": "isSupplementTo",
       "identifier": "https://doi.org/10.48550/arXiv.2611.12567",
       "scheme": "doi"
+    },
+    {
+      "relation": "isDocumentedBy",
+      "identifier": "https://occamolab.org",
+      "scheme": "url"
     }
   ],
   "publication_date": "2026-11-10",

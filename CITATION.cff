@@ -4,6 +4,8 @@ title: "LawKAN: group-law layers for composition — when imposing a known law p
 version: 1.1.0
 date-released: 2026-11-10
 license: AGPL-3.0-or-later
+url: "https://occamolab.org"
+repository-code: "https://github.com/occamolab/lawkan"
 authors:
   - family-names: Mishchenko
     given-names: Anna
