@@ -2,6 +2,7 @@
 
 [![License: AGPL-3.0-or-later](https://img.shields.io/badge/license-AGPL--3.0--orlater-blue.svg)](LICENSE)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/)
+[![arXiv](https://img.shields.io/badge/arXiv-2611.12567-b31b1b.svg)](https://arxiv.org/abs/2611.12567)
 
 **Keywords:** Kolmogorov–Arnold networks · KAN · group law · transformation composition ·
 Lie groups · geometric deep learning · robot-arm calibration · inertial navigation ·
@@ -12,6 +13,8 @@ reproducibility · parameter efficiency · tiny models.
 This repository is the code and reproduction artifact for the LawKAN paper: the
 experiments, pinned dumps, mechanical checks, and figure generators behind its tables
 and figures.
+
+**Paper:** [arXiv:2611.12567](https://arxiv.org/abs/2611.12567) · **DOI:** [10.48550/arXiv.2611.12567](https://doi.org/10.48550/arXiv.2611.12567)
 
 **Question.** Many tasks compose rotations, poses, or other transformations. The rule for
 combining them is known in advance, and it is a non-commutative multiplication. Learned

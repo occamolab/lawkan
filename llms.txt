@@ -6,7 +6,7 @@
 > and where the deviation's form is unknown, a small zero-initialized correction in the node
 > learns it. Composition (SU(2) rotation composition is the leading instance; GL⁺(2,ℝ) and
 > SE(3) follow the same recipe). Repository: https://github.com/occamolab/lawkan — code and
-> reproduction artifact for the LawKAN paper.
+> reproduction artifact for the LawKAN paper. Paper: https://arxiv.org/abs/2611.12567
 
 ## Key facts
 

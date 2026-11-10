@@ -1,8 +1,9 @@
 # LawKAN: group-law layers for composition — when imposing a known law pays off
 
-*Code and reproduction artifact: <https://github.com/occamolab/lawkan>. The preprint
-link is added upon posting; see `CITATION.cff`. This mirrors the manuscript abstract; the
-typeset version is in the paper.*
+*Code and reproduction artifact: <https://github.com/occamolab/lawkan>. Paper:
+[arXiv:2611.12567](https://arxiv.org/abs/2611.12567); DOI:
+[10.48550/arXiv.2611.12567](https://doi.org/10.48550/arXiv.2611.12567). This mirrors the
+manuscript abstract; the typeset version is in the paper.*
 
 ## Abstract
 

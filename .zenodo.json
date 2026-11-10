@@ -28,6 +28,11 @@
       "relation": "isSupplementTo",
       "identifier": "https://github.com/occamolab/lawkan",
       "scheme": "url"
+    },
+    {
+      "relation": "isSupplementTo",
+      "identifier": "https://doi.org/10.48550/arXiv.2611.12567",
+      "scheme": "doi"
     }
   ],
   "publication_date": "2026-10-24",

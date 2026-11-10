@@ -9,3 +9,14 @@ authors:
     given-names: Anna
   - family-names: Gavrilin
     given-names: Nikolai
+preferred-citation:
+  type: article
+  title: "LawKAN: Group-Law Layers for Composition -- When Imposing a Known Law Pays Off"
+  authors:
+    - family-names: Mishchenko
+      given-names: Anna
+    - family-names: Gavrilin
+      given-names: Nikolai
+  year: 2026
+  doi: "10.48550/arXiv.2611.12567"
+  url: "https://arxiv.org/abs/2611.12567"
